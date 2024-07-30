@@ -12,7 +12,7 @@ export default function SplashScreen({ navigation }) {
   }, [navigation]);
 
   return (
-    <View>
+    <View style={{ flex: 1 }}>
       <Image
         source={require("../../assets/splashscreen.png")}
         style={{ width: width, height: height }}

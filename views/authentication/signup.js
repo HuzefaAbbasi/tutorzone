@@ -91,6 +91,7 @@ function Header() {
 const styles = {
   container: {
     padding: 20,
+    flex: 1,
     backgroundColor: "#fff",
     width: width,
     height: height,

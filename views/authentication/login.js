@@ -82,6 +82,7 @@ const styles = {
   container: {
     padding: 20,
     backgroundColor: "#fff",
+    flex: 1,
     width: width,
     height: height,
   },

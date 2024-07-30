@@ -51,6 +51,7 @@ const styles = {
     padding: 20,
     backgroundColor: "#fff",
     width: width,
+    flex: 1,
     height: height,
   },
   header: {

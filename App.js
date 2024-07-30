@@ -17,13 +17,13 @@ import Messages from "./views/messages";
 import Profile from "./views/profile";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createDrawerNavigator } from "@react-navigation/drawer";
-import {View} from "react-native";
+import { View } from "react-native";
 
 const StackNavigation = () => {
   const Stack = createNativeStackNavigator();
   return (
     <Stack.Navigator
-      initialRouteName="Main"
+      initialRouteName="SplashScreen"
       screenOptions={{ headerShown: false }}
     >
       <Stack.Screen name="SplashScreen" component={SplashScreen} />
@@ -71,8 +71,7 @@ function DrawerContent(props) {
 function DrawerNavigation() {
   const Drawer = createDrawerNavigator();
   return (
-    <Drawer.Navigator
-    drawerContent={(props) => <DrawerContent {...props} />}>
+    <Drawer.Navigator drawerContent={(props) => <DrawerContent {...props} />}>
       <Drawer.Screen name="Home" component={BottomNavigation} />
       <Drawer.Screen name="Profile" component={Profile} />
     </Drawer.Navigator>
@@ -123,12 +122,3 @@ export default function App() {
     </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
